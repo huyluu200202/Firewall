@@ -1,0 +1,22 @@
+<model>
+    <mount>//OPNsense/RPZ/WhiteList</mount>
+    <description>
+        DNS filtering whitelist
+    </description>
+    <version>1.0.0</version>
+    <items>
+      <entries>
+        <entry type=".\DomainListField">
+          <enabled type="BooleanField">
+            <default>1</default>
+            <Required>Y</Required>
+          </enabled>
+          <domain type="TextField">
+            <Required>Y</Required>
+            <Mask>/^(([a-zA-Z0-9-]+\.)|(\*\.))+[\a-zA-Z0-9-]+$/</Mask>
+            <ValidationMessage>Invalid domain</ValidationMessage>
+          </domain>
+        </entry>
+      </entries>
+    </items>
+</model>

@@ -1,0 +1,18 @@
+<buttons>
+  <Services>
+    <Log>
+        <Ntopng visibleName="Ntopng">
+            <Back visibleName="" cssClass="icon glyphicon glyphicon-chevron-left">
+                <Ntopng visibleName="" url="/ui/ntopng/general/index" />
+            </Back>
+        </Ntopng>
+    </Log>
+    <Ntopng visibleName="Ntopng">
+      <all>
+        <Log visibleName="Log" cssClass="icon glyphicon glyphicon-list">
+          <Ntopng visibleName="Ntopng" url="/ui/diagnostics/log/core/ntopng" />
+        </Log>
+      </all>
+    </Ntopng>
+  </Services>
+</buttons>

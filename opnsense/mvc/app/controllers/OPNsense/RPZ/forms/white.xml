@@ -1,0 +1,14 @@
+<form>
+    <field>
+        <id>entry.enabled</id>
+        <label>Enabled</label>
+        <type>checkbox</type>
+        <help><![CDATA[Enable whitelisting of this domain.]]></help>
+    </field>
+    <field>
+        <id>entry.domain</id>
+        <label>Domain</label>
+        <type>text</type>
+        <help><![CDATA[Whitelisted domain.]]></help>
+    </field>
+</form>
