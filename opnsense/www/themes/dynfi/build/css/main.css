@@ -53,6 +53,16 @@ body {
   100% { background-position: 0% 50%; }
 }
 
+tr[data-service-widget-id="crowdsec"],
+tr[data-service-widget-id="suricata_wan"] {
+  display: none !important;
+}
+
+tr[data-row-id="crowdsec"],
+tr[data-row-id="suricata_wan"] {
+  display: none !important;
+}
+
     .preloader {
       height: 100%;
       display: fixed;
