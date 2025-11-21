@@ -31,7 +31,6 @@
  */
 
 require_once("auth.inc");
-require_once('/usr/local/www/license_utils.inc');
 
 $acl = new OPNsense\Core\ACL();
 $priv_list = $acl->getPrivList();
@@ -177,10 +176,6 @@ function session_auth()
             }
             if (!isset($config['system']['webgui']['quietlogin'])) {
                 auth_log(sprintf("Successful login for user '%s' from: %s", $_POST['usernamefld'], $_SERVER['REMOTE_ADDR']), LOG_NOTICE);
-            }
-	    if (!is_license_valid()) {
-               header(url_safe("Location: /license.php"));
-               exit;
             }
             if (!empty($_GET['url'])) {
                 $tmp_url_parts = parse_url($_GET['url']);

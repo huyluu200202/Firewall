@@ -2,14 +2,7 @@
 
 session_start();
 
-require_once("license_utils.inc");
-
 $current_script = basename($_SERVER['PHP_SELF']);
-
-if (!is_license_valid() && $current_script !== "license.php") {
-    header("Location: /license.php");
-    exit;
-}
 
 function system_get_language_code()
 {
